@@ -11,10 +11,22 @@ A Python-based CAPTCHA refinement tool that distinguishes humans from bots using
 - Time-limited verification session
 - Visual feedback with live webcam feed
 
-## 3. Computer Vision Foundations
+## Computer Vision Foundations
 
 ### Facial Landmark Detection
 The system uses Dlib's 68-point facial landmark model:
+## Facial Landmark Indices (68-point model)
+### 📌 Key Regions and Point Ranges
+
+| Facial Region       | Landmark Points |
+|---------------------|-----------------|
+| **Jawline**         | 0 - 16          |
+| **Right Eyebrow**   | 17 - 21         |
+| **Left Eyebrow**    | 22 - 26         |
+| **Nose**            | 27 - 35         |
+| **Right Eye**       | 36 - 41         |
+| **Left Eye**        | 42 - 47         |
+| **Mouth**           | 48 - 67         |
 
 ### Eye Aspect Ratio (EAR) Algorithm
 The core blink detection uses:
